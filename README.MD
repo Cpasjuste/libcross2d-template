@@ -19,7 +19,7 @@
   ```
 
 ### Add custom data to your project
-libcross2d should automatically handle your data. In the "data" folder of your project, you'll find multiple directories:
+libcross2d should automatically handle your data. In the [data](https://github.com/Cpasjuste/libcross2d-template/tree/master/data) folder of your project, you'll find multiple directories:
   - 3ds: data in this directory will only be included in nintendo 3ds builds (platform)
   - common: data in this directory will be included in all builds (platforms)
   - dreamcast: data in this directory will only be included in sega dreamcast builds (platform)
