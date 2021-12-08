@@ -8,10 +8,10 @@ add_subdirectory(libcross2d)
 ########################
 # PROJECT SETUP
 ########################
-project(PROJECT_NAME_TEMPLATE)
+project(app)
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "0")
-set(PROJECT_AUTHOR "PROJECT_AUTHOR_TEMPLATE")
+set(PROJECT_AUTHOR "libcross2d")
 set(TITLE_ID "C2D000001") # ps vita
 
 ########################
