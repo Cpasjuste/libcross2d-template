@@ -1,6 +1,6 @@
 # libcross2d template
 
-### How to build your first project (on linux for linux)
+### Build your first project (on linux for linux)
 
 - Install dependencies
   ```
@@ -18,7 +18,7 @@
   make
   ```
 
-### How to add custom data to your project
+### Add custom data to your project
 libcross2d should automatically handle your data. In the "data" folder of your project, you'll find multiple directories:
   - 3ds: data in this directory will only be included in nintendo 3ds builds (platform)
   - common: data in this directory will be included in all builds (platforms)
