@@ -2,9 +2,13 @@
 
 ### Build your first project (on linux for linux)
 
-- Install dependencies
+- Install dependencies (Ubuntu)
   ```
   sudo apt-get install build-essential cmake git libsdl2-dev libfreetype6-dev libglm-dev libconfig-dev libphysfs-dev
+  ```
+  Fedora
+  ```
+  sudo dnf install @development-tools cmake git SDL2-devel freetype-devel glm-devel libconfig-devel physfs-devel Box2D-devel
   ```
 - Clone this template repository
   ```
