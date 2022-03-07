@@ -7,6 +7,14 @@
 using namespace c2d;
 
 App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
+    // add some text
+    auto text = new Text("libcross2d @ cpasjuste");
+    text->setOutlineColor(Color::Red);
+    text->setOutlineThickness(1);
+    text->setOrigin(Origin::BottomRight);
+    text->setPosition(screenSize);
+    App::add(text);
+
     // add a simple rectangle
     rectangle = new C2DRectangle({128, 128});
     rectangle->setFillColor(Color::Orange);
