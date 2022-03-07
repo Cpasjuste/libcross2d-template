@@ -12,7 +12,6 @@ project(app)
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "0")
 set(PROJECT_AUTHOR "libcross2d")
-set(TITLE_ID "C2D000001") # ps vita
 
 ########################
 # SOURCES SETUP
@@ -21,6 +20,12 @@ file(GLOB SOURCES src/*.c*)
 set(INCLUDES src)
 set(CFLAGS)
 set(LDFLAGS)
+
+if (PLATFORM_PS4)
+    set(PS4_PKG_TITLE "libcross2d template")
+    set(PS4_PKG_TITLE_ID "CROS20001")
+    set(PS4_PKG_VERSION "01.00")
+endif ()
 
 #####################
 # EXECUTABLE
