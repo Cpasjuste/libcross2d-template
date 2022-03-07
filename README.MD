@@ -19,7 +19,34 @@
   make -j4
   ```
 
-### Build your first project (on linux for ps4)
+### Build your first project (on linux for nintendo switch)
+
+- Install dependencies
+  ```
+  sudo apt -yq update
+  sudo apt -yq install build-essential cmake git zip autoconf libtool automake curl
+  ```
+- Install switch toolchain (devkitpro)
+  ```
+  wget https://github.com/devkitPro/pacman/releases/download/v1.0.2/devkitpro-pacman.amd64.deb
+  sudo dpkg -i devkitpro-pacman.amd64.deb
+  sudo dkp-pacman -Syu
+  sudo dkp-pacman --noconfirm -S switch-dev switch-portlibs
+  ```
+- Clone this template repository
+  ```
+  git clone --recursive https://github.com/Cpasjuste/libcross2d-template.git
+  ```
+- Build !
+  ```
+  cd libcross2d-template
+  mkdir cmake-build-release && cd cmake-build-release
+  export DEVKITPRO=/opt/devkitpro
+  cmake -G "Unix Makefiles" -DPLATFORM_SWITCH=ON -DCMAKE_BUILD_TYPE=Release ../
+  make -j4 app.nro
+  ```
+
+### Build your first project (on linux for sony ps4)
 
 - Install dependencies
   ```
