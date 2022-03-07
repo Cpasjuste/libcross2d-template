@@ -8,7 +8,7 @@ using namespace c2d;
 
 App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
     // add some text
-    auto text = new Text("libcross2d @ cpasjuste");
+    auto text = new C2DText("libcross2d @ cpasjuste");
     text->setOutlineColor(Color::Red);
     text->setOutlineThickness(1);
     text->setOrigin(Origin::BottomRight);
