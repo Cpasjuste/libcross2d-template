@@ -7,7 +7,6 @@
 using namespace c2d;
 
 App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
-
     // add a simple rectangle
     rectangle = new C2DRectangle({128, 128});
     rectangle->setFillColor(Color::Orange);
@@ -20,23 +19,24 @@ App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
 
 // onInput is only called when a key is pressed
 bool App::onInput(c2d::Input::Player *players) {
+    unsigned int keys = players[0].keys;
 
     // move cube
-    if (players[0].keys & Input::Key::Up) {
+    if (keys & Input::Key::Up) {
         rectangle->move({0, -1});
     }
-    if (players[0].keys & Input::Key::Down) {
+    if (keys & Input::Key::Down) {
         rectangle->move({0, 1});
     }
-    if (players[0].keys & Input::Key::Left) {
+    if (keys & Input::Key::Left) {
         rectangle->move({-1, 0});
     }
-    if (players[0].keys & Input::Key::Right) {
+    if (keys & Input::Key::Right) {
         rectangle->move({1, 0});
     }
 
     // quit app (enter and space on a keyboard)
-    if (players[0].keys & Input::Key::Start || players[0].keys & Input::Key::Select) {
+    if (keys & Input::Key::Start || keys & Input::Key::Select || keys & EV_QUIT) {
         quit = true;
     }
 

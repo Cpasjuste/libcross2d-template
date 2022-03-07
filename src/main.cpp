@@ -7,7 +7,6 @@
 using namespace c2d;
 
 int main(int argc, char *argv[]) {
-
     // create main app/renderer
     auto app = new App(Vector2f(C2D_SCREEN_WIDTH, C2D_SCREEN_HEIGHT));
 
