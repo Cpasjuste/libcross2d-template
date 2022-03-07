@@ -4,7 +4,7 @@
 
 - Install dependencies
   ```
-  sudo apt-get install build-essential cmake git libsdl2-dev libfreetype6-dev libglm-dev libconfig-dev libphysfs-dev
+  sudo apt-get install build-essential cmake git libsdl2-dev libfreetype6-dev libglm-dev libconfig-dev libzip-dev libfuse-dev
   ```
 - Clone this template repository
   ```
