@@ -1,5 +1,14 @@
 # libcross2d template
 
+## Table of contents
+
+1. [Build for Linux](#linux)
+2. [Build for Nintendo Switch](#switch)
+3. [Build for Nintendo 3DS](#3ds)
+4. [Build for Sony PS4](#ps4)
+5. [Add custom data to your project](#data)
+
+<a name="linux"></a>
 ### Build your first project (on linux for linux)
 
 - Install dependencies
@@ -19,6 +28,7 @@
   make -j4
   ```
 
+<a name="switch"></a>
 ### Build your first project (on linux for nintendo switch)
 
 - Install dependencies
@@ -46,6 +56,7 @@
   make -j4 app.nro
   ```
 
+<a name="3ds"></a>
 ### Build your first project (on linux for nintendo 3ds)
 
 - Install dependencies
@@ -73,6 +84,7 @@
   make -j4 app.3dsx
   ```
 
+<a name="ps4"></a>
 ### Build your first project (on linux for sony ps4)
 
 - Install dependencies
@@ -100,16 +112,23 @@
   make -j4 app_pkg
   ```
 
+<a name="data"></a>
 ### Add custom data to your project
-libcross2d should automatically handle your data. In the [data](https://github.com/Cpasjuste/libcross2d-template/tree/master/data) folder of your project, you'll find multiple directories:
-  - 3ds: data in this directory will only be included in nintendo 3ds builds (platform)
-  - common: data in this directory will be included in all builds (platforms)
-  - dreamcast: data in this directory will only be included in sega dreamcast builds (platform)
-  - linux: data in this directory will only be included in linux builds (platform)
-  - ps4: data in this directory will only be included in sony ps4 builds (platform)
-  - switch: data in this directory will only be included in nintendo switch builds (platform)
-  - vita: data in this directory will only be included in sony ps vita builds (platform)
+
+libcross2d should automatically handle your data. In
+the [data](https://github.com/Cpasjuste/libcross2d-template/tree/master/data) folder of your project, you'll find
+multiple directories:
+
+- 3ds: data in this directory will only be included in nintendo 3ds builds (platform)
+- common: data in this directory will be included in all builds (platforms)
+- dreamcast: data in this directory will only be included in sega dreamcast builds (platform)
+- linux: data in this directory will only be included in linux builds (platform)
+- ps4: data in this directory will only be included in sony ps4 builds (platform)
+- switch: data in this directory will only be included in nintendo switch builds (platform)
+- vita: data in this directory will only be included in sony ps vita builds (platform)
 
 In each platform directory, you'll find two subdirectories:
-  - datadir: files in this directory will be available on the target platform storage (hard drive, micro-sd, etc...) (Io::getDataPath)
-  - romfs: files in this directory will be embedded in the application binary (Io::getRomFsPath)
+
+- datadir: files in this directory will be available on the target platform storage (hard drive, micro-sd, etc...) (Io::
+  getDataPath)
+- romfs: files in this directory will be embedded in the application binary (Io::getRomFsPath)
