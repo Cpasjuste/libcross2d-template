@@ -1,14 +1,38 @@
-# libcross2d template
-
 ## Table of contents
 
-1. [Build for Linux](#linux)
-2. [Build for Nintendo Switch](#switch)
-3. [Build for Nintendo 3DS](#3ds)
-4. [Build for Sony Ps Vita](#vita)
-5. [Build for Sony PS4](#ps4)
-6. [Add custom data to your project](#data)
-7. [What to do next ?](#next)
+1. [Introduction](#intro)
+2. [Made with cross2d](#made-with-cross2d)
+3. [Build for Linux](#linux)
+4. [Build for Nintendo Switch](#switch)
+5. [Build for Nintendo 3DS](#3ds)
+6. [Build for Sony Ps Vita](#vita)
+7. [Build for Sony PS4](#ps4)
+8. [Add custom data to your project](#data)
+9. [What to do next ?](#next)
+
+<a name="intro"></a>
+### libcross2d: a cross platform 2d library
+- a c++ cross platform 2d [graphic](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/texture), [input](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/input), [audio](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/audio) and [config](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/config) library
+- run on Windows, Linux, Nintendo Switch, Nintendo 3DS, Sony PS Vita, Sony PS4, Dreamcast
+- draw textures, rectangles, circles, texts (TrueType) and more
+- basic [tween](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/crazy) engine (move, rotate, scale, color)
+- [clock/timer](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/fps) classes
+- [configuration](https://github.com/Cpasjuste/libcross2d-examples/tree/master/examples/config) file handling
+- pack your application (zip) for release on any target, including resources (data)
+- quickly prototype your application on desktop (Linux and Windows)
+- use hardware acceleration
+- use some of the great [sfml](https://www.sfml-dev.org/) library stuff (fonts, shapes, matrices)
+- use [tweeny](https://github.com/mobius3/tweeny) for the (minimal) tween engine
+- use some of the great [libretro](https://github.com/libretro/glsl-shaders) shaders (Linux, Switch, PS4)
+- preliminary developed for my own use, still a work in progress
+
+### Made with cross2d
+- [pfbneo](https://github.com/Cpasjuste/pemu/tree/master/pfbneo): final burn neo emulator port
+- [psnes](https://github.com/Cpasjuste/pemu/tree/master/psnes): snes9x emulator port
+- [pnes](https://github.com/Cpasjuste/pemu/tree/master/pnes): nestopia emulator port
+- [pplay](https://github.com/Cpasjuste/pplay): mpv video player
+- [SillyTower](https://github.com/Cpasjuste/sillytower): simple physics based game
+- [RetroDream](https://github.com/Cpasjuste/retrodream): sega dreamcast iso loader
 
 <a name="linux"></a>
 ### Build your first project (on linux for linux)
