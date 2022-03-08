@@ -8,7 +8,7 @@
 4. [Build for Sony Ps Vita](#vita)
 5. [Build for Sony PS4](#ps4)
 6. [Add custom data to your project](#data)
-7. [What do to next ?](#next)
+7. [What to do next ?](#next)
 
 <a name="linux"></a>
 ### Build your first project (on linux for linux)
@@ -166,5 +166,5 @@ In each platform directory, you'll find two subdirectories:
 - romfs: files in this directory will be embedded in the application binary (Io::getRomFsPath)
 
 <a name="examples"></a>
-### What do to next ?
+### What to do next ?
 You can take a look at the [libcross2d-examples](https://github.com/Cpasjuste/libcross2d-examples) repository for a few examples !
