@@ -24,7 +24,7 @@
 - Install dependencies
   ```
   sudo apt -yq update
-  sudo apt -yq install build-essential cmake git zip autoconf libtool automake curl
+  sudo apt -yq install build-essential cmake git zip curl
   ```
 - Install switch toolchain (devkitpro)
   ```
@@ -46,12 +46,39 @@
   make -j4 app.nro
   ```
 
+### Build your first project (on linux for nintendo 3ds)
+
+- Install dependencies
+  ```
+  sudo apt -yq update
+  sudo apt -yq install build-essential cmake git zip curl
+  ```
+- Install 3ds toolchain (devkitpro)
+  ```
+  wget https://github.com/devkitPro/pacman/releases/download/v1.0.2/devkitpro-pacman.amd64.deb
+  sudo dpkg -i devkitpro-pacman.amd64.deb
+  sudo dkp-pacman -Syu
+  sudo dkp-pacman --noconfirm -S 3ds-dev 3ds-portlibs
+  ```
+- Clone this template repository
+  ```
+  git clone --recursive https://github.com/Cpasjuste/libcross2d-template.git
+  ```
+- Build !
+  ```
+  cd libcross2d-template
+  mkdir cmake-build-release && cd cmake-build-release
+  export DEVKITPRO=/opt/devkitpro
+  cmake -G "Unix Makefiles" -DPLATFORM_3DS=ON -DCMAKE_BUILD_TYPE=Release ../
+  make -j4 app.3dsx
+  ```
+
 ### Build your first project (on linux for sony ps4)
 
 - Install dependencies
   ```
   sudo apt -yq update
-  sudo apt -yq install build-essential cmake git zip libgpgme11
+  sudo apt -yq install build-essential cmake git zip curl libgpgme11
   ```
 - Install ps4 toolchain
   ```
