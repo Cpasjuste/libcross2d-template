@@ -165,6 +165,6 @@ In each platform directory, you'll find two subdirectories:
   getDataPath)
 - romfs: files in this directory will be embedded in the application binary (Io::getRomFsPath)
 
-<a name="examples"></a>
+<a name="next"></a>
 ### What to do next ?
 You can take a look at the [libcross2d-examples](https://github.com/Cpasjuste/libcross2d-examples) repository for a few examples !
