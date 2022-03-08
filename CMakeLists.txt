@@ -25,6 +25,8 @@ if (PLATFORM_PS4)
     set(PS4_PKG_TITLE "libcross2d template")
     set(PS4_PKG_TITLE_ID "CROS20001")
     set(PS4_PKG_VERSION "01.00")
+elseif (PLATFORM_VITA)
+    set(TITLE_ID "CROSS0001")
 endif ()
 
 #####################
