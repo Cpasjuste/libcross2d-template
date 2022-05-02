@@ -27,24 +27,24 @@ App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
 
 // onInput is only called when a key is pressed
 bool App::onInput(c2d::Input::Player *players) {
-    unsigned int keys = players[0].keys;
+    unsigned int buttons = players[0].buttons;
 
     // move cube
-    if (keys & Input::Key::Up) {
+    if (buttons & Input::Button::Up) {
         rectangle->move({0, -1});
     }
-    if (keys & Input::Key::Down) {
+    if (buttons & Input::Button::Down) {
         rectangle->move({0, 1});
     }
-    if (keys & Input::Key::Left) {
+    if (buttons & Input::Button::Left) {
         rectangle->move({-1, 0});
     }
-    if (keys & Input::Key::Right) {
+    if (buttons & Input::Button::Right) {
         rectangle->move({1, 0});
     }
 
     // quit app (enter and space on a keyboard)
-    if (keys & Input::Key::Start || keys & Input::Key::Select || keys & EV_QUIT) {
+    if (buttons & Input::Button::Start || buttons & Input::Button::Select || buttons & Input::Button::Quit) {
         quit = true;
     }
 
