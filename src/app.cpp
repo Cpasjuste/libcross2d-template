@@ -12,7 +12,7 @@ App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
     text->setOutlineColor(Color::Red);
     text->setOutlineThickness(1);
     text->setOrigin(Origin::BottomRight);
-    text->setPosition(screenSize);
+    text->setPosition(App::getSize());
     App::add(text);
 
     // add a simple rectangle
@@ -21,7 +21,7 @@ App::App(const c2d::Vector2f &screenSize) : C2DRenderer(screenSize) {
     rectangle->setOutlineColor(Color::Red);
     rectangle->setOutlineThickness(2);
     rectangle->setOrigin(Origin::Center);
-    rectangle->setPosition(screenSize.x / 2, screenSize.y / 2);
+    rectangle->setPosition(App::getSize().x / 2, App::getSize().y / 2);
     App::add(rectangle);
 }
 
