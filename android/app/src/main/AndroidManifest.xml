@@ -37,13 +37,8 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
-        <!-- android:resizeableActivity="false" -->
-        <!-- <meta-data android:name="android.max_aspect" android:value="2.1" /> -->
-
-        <!-- TODO: handle orientation change -->
-        <!-- android:configChanges="|orientation|... -->
         <activity
-            android:name="org.libsdl.app.SDLActivity"
+            android:name="fr.mydedibox.libcross2d.Main"
             android:screenOrientation="landscape"
             android:alwaysRetainTaskState="true"
             android:configChanges="layoutDirection|locale|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
