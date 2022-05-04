@@ -1,3 +1,5 @@
+import com.android.build.api.dsl.NdkBuild
+
 plugins {
     id 'com.android.application'
 }
@@ -20,7 +22,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags '-std=c++17'
-                arguments "-DPLATFORM_ANDROID=ON"
+                arguments "-DPLATFORM_ANDROID=ON", "-DANDROID_ASSETS_PATH=${sourceSets.main.assets.srcDirs[0]}"
             }
         }
     }
