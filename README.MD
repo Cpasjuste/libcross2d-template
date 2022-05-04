@@ -37,10 +37,14 @@
 <a name="linux"></a>
 ### Build your first project (on linux for linux)
 
-- Install dependencies
+- Install dependencies (Ubuntu)
   ```
   sudo apt -yq update
   sudo apt -yq install build-essential cmake git libsdl2-dev libfreetype6-dev libglm-dev libconfig-dev libzip-dev libfuse-dev
+  ```
+  Fedora
+  ```
+  sudo dnf install @development-tools cmake git SDL2-devel freetype-devel glm-devel libconfig-devel physfs-devel Box2D-devel
   ```
 - Clone this template repository
   ```
